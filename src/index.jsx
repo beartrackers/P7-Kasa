@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import Header from './components/Header'
-import Footer from './components/Footer'
-import Error from './components/Error'
+// import Footer from './components/Footer'
+// import Error from './components/Error'
+console.log(ReactDOM)
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
@@ -15,11 +15,12 @@ root.render(
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="*">
-          <Error />
-        </Route>
+        <Route path="fiche-logement/:id"></Route>
+        <Route path="A-propos"></Route>
+        <Route path="*">{/* <Error /> */}</Route>
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 )
