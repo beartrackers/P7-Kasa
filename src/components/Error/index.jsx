@@ -3,6 +3,7 @@ import colors from '../../utils/style/colors'
 import ErrorIllustration from '../../assets/404.svg'
 
 const ErrorWrapper = styled.div`
+  height: calc(100vh - 350px);
   margin: 30px;
   display: flex;
   flex-direction: column;

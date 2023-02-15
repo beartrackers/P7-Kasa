@@ -1,12 +1,13 @@
-import Card from '../../components/Card'
+// import Card from '../../components/Card'
 import Banner from '../../components/Banner'
+import Gallery from '../../components/Gallery'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Banner />
-        <Card />
+        <Gallery />
       </header>
     </div>
   )
