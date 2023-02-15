@@ -10,7 +10,6 @@ export const StyledLink = styled(Link)`
   text-align: center;
   ${(props) =>
     props.$isFullLink &&
-    `color: white; 
-    border-radius: 30px; 
-    background-color: ${colors.primary};`}
+    `
+    text-decoration: underline;`}
 `
