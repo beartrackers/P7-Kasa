@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
 import ErrorIllustration from '../../assets/404.svg'
+import { StyledLink } from '../../utils/style/StyledLink'
 
 const ErrorWrapper = styled.div`
   height: calc(100vh - 350px);
@@ -19,10 +20,10 @@ const ErrorSubtitle = styled.h2`
 const Illustration = styled.img`
   max-width: 800px;
 `
-const ErrorReturn = styled.a`
-  color: ${colors.primary};
-  font-weight: 300;
-`
+// const ErrorReturn = styled.a`
+//   color: ${colors.primary};
+//   font-weight: 300;
+// `
 function Error() {
   return (
     <ErrorWrapper>
@@ -30,7 +31,9 @@ function Error() {
       <ErrorSubtitle>
         Oups! La page que vous demandez n'existe pas.
       </ErrorSubtitle>
-      <ErrorReturn>Retourner sur la page d'accueil</ErrorReturn>
+      <StyledLink to="/" $isFullLink>
+        Retourner sur la page d'accueil
+      </StyledLink>
     </ErrorWrapper>
   )
 }
