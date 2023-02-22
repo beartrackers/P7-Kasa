@@ -8,10 +8,7 @@ const FooterContainer = styled.footer`
   align-items: center;
   justify-content: bottom;
   padding-top: 60px;
-  margin-left: -8px;
-  margin-right: -8px;
-  margin-bottom: -8px;
-
+  margin-top: 35px;
   background-color: ${colors.black};
 `
 

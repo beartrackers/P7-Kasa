@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-import BannerImg from '../../assets/IMGBanner.svg'
 
 const BannerWrapper = styled.div`
   border-radius: 25px;
@@ -29,11 +28,11 @@ const BannerQuote = styled.span`
   font-weight: 500;
   color: ${colors.background};
 `
-function Banner() {
+function Banner({ quote, picture }) {
   return (
     <BannerWrapper>
-      <Illustration src={BannerImg} />
-      <BannerQuote>Chez vous, partout et ailleurs</BannerQuote>
+      <Illustration src={picture} />
+      <BannerQuote>{quote}</BannerQuote>
     </BannerWrapper>
   )
 }

@@ -5,17 +5,22 @@ import Home from './pages/Home'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
+import About from './pages/About'
+import GlobalStyle from './utils/style/GlobalStyle'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="fiche-logement/:id"></Route>
-        <Route path="A-propos"></Route>
+        <Route path="/fiche-logement/:id"></Route>
+        <Route path="/About">
+          <About />
+        </Route>
         <Route path="*">
           <Error />
         </Route>
