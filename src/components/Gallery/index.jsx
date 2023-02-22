@@ -14,36 +14,17 @@ const GalleryWrapper = styled.div`
   margin-bottom: 45px;
   background-color: ${colors.backgroundGallery};
 `
-let items = []
-async function getProducts() {
-  //   Récupération des pièces depuis l'API HTTP
-  const reponse = await fetch('http://localhost:3000/api/data.json')
-
-  items = await reponse.json()
-}
-
-function Gallery() {
-  getProducts()
-  let cardTab = items
-
+function Gallery(props) {
+  console.log(props)
   return (
     <GalleryWrapper>
-      {cardTab.map((aCardTab) => (
+      {props.cardTab.map((aCardTab) => (
         <Card
           key={aCardTab.id}
           title={aCardTab.title}
           picture={aCardTab.cover}
         />
       ))}
-
-      {/* <Card title='maison 1'/>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card /> */}
     </GalleryWrapper>
   )
 }

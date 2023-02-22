@@ -32,7 +32,10 @@ function Header() {
         <StyledLink to="/" $isFullLink={location.pathname === '/'}>
           Accueil
         </StyledLink>
-        <StyledLink to="/About" $isFullLink={location.pathname === '/About'}>
+        <StyledLink
+          to="/a-propos"
+          $isFullLink={location.pathname === '/a-propos'}
+        >
           A Propos
         </StyledLink>
       </NavLinkDiv>

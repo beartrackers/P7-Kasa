@@ -18,7 +18,7 @@ ReactDOM.render(
           <Home />
         </Route>
         <Route path="/fiche-logement/:id"></Route>
-        <Route path="/About">
+        <Route path="/a-propos">
           <About />
         </Route>
         <Route path="*">
