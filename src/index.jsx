@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
 import About from './pages/About'
+import FicheLogement from './pages/fiche-logement'
 import GlobalStyle from './utils/style/GlobalStyle'
 
 ReactDOM.render(
@@ -17,7 +18,9 @@ ReactDOM.render(
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/fiche-logement/:id"></Route>
+        <Route path="/fiche-logement/:id">
+          <FicheLogement />
+        </Route>
         <Route path="/a-propos">
           <About />
         </Route>
