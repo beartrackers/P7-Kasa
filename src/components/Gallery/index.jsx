@@ -20,7 +20,7 @@ function Gallery(props) {
     <GalleryWrapper>
       {props.cardTab.map((aCardTab) => (
         <Card
-          key={aCardTab.id}
+          id={aCardTab.id}
           title={aCardTab.title}
           picture={aCardTab.cover}
         />

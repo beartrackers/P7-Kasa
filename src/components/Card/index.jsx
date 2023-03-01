@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
 import DefaultPicture from '../../assets/carré.svg'
+import { Link } from 'react-router-dom'
 
 const CardTitle = styled.div`
   color: ${colors.background};
@@ -46,13 +47,15 @@ const CardWrapper = styled.div`
   }
 `
 
-function Card({ title, picture }) {
+function Card({ id, title, picture }) {
   return (
-    <CardWrapper>
-      <CardImage src={picture} alt="logement" />
-      <CardGradient />
-      <CardTitle>{title}</CardTitle>
-    </CardWrapper>
+    <Link to={`/fiche-logement/${id}`}>
+      <CardWrapper>
+        <CardImage src={picture} alt="logement" />
+        <CardGradient />
+        <CardTitle>{title}</CardTitle>
+      </CardWrapper>
+    </Link>
   )
 }
 
