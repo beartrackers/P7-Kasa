@@ -7,14 +7,21 @@ import styled from 'styled-components'
 const StarWrapper = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  @media (max-width: ${colors.breakpoint}) {
+    gap: 5px;
+  }
 `
 
 const StarIcon = styled(FontAwesomeIcon)`
-  margin-right: ${({ space }) => space}px;
-  font-size: ${({ size }) => size}px;
+  font-size: 30px;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 15px;
+  }
 `
 
-const RatingStars = ({ rating, size = 30, space = 15 }) => {
+function RatingStars({ rating }) {
   const maxRating = 5
   const filledStars = rating
   const emptyStars = maxRating - rating
@@ -25,20 +32,12 @@ const RatingStars = ({ rating, size = 30, space = 15 }) => {
         key={`filled-star-${index}`}
         icon={faStar}
         color={colors.primary}
-        size={size}
-        space={space}
       />
     )
   )
 
   const emptyStarIcons = Array.from({ length: emptyStars }).map((_, index) => (
-    <StarIcon
-      key={`empty-star-${index}`}
-      icon={faStar}
-      color="#E3E3E3"
-      size={size}
-      space={space}
-    />
+    <StarIcon key={`empty-star-${index}`} icon={faStar} color="#E3E3E3" />
   ))
 
   return (

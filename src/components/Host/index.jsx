@@ -4,7 +4,9 @@ import colors from '../../utils/style/colors'
 
 const HostContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  margin: auto;
+  margin-right: 0;
   margin-bottom: 16px;
 `
 

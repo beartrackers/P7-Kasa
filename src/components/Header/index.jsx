@@ -2,9 +2,12 @@ import { Link, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import { StyledLink } from '../../utils/style/StyledLink'
 import Logo from '../../assets/logo.png'
-
+import colors from '../../utils/style/colors'
 const HomeLogo = styled.img`
   height: 70px;
+  @media (max-width: ${colors.breakpoint}) {
+    height: 45px;
+  }
 `
 
 const NavContainer = styled.nav`
@@ -19,6 +22,9 @@ const NavContainer = styled.nav`
 const NavLinkDiv = styled.div`
   font-size: 24px;
   font-weight: 500;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 12px;
+  }
 `
 function Header() {
   const location = useLocation()

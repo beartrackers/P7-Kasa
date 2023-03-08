@@ -6,6 +6,7 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components'
+import colors from '../../utils/style/colors'
 
 const CarouselDiv = styled.div`
   display: flex;
@@ -18,6 +19,9 @@ const CarouselDiv = styled.div`
   position: relative;
   border-radius: 25px;
   overflow: hidden;
+  @media (max-width: ${colors.breakpoint}) {
+    height: 255px;
+  }
 `
 const ButtonLeft = styled.button`
   position: absolute;
@@ -58,7 +62,7 @@ const CarouselImg = styled.img`
   object-fit: cover;
 `
 
-const Carousel = ({ images }) => {
+function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const handleNext = () => {

@@ -27,6 +27,11 @@ const BannerQuote = styled.span`
   font-size: 48px;
   font-weight: 500;
   color: ${colors.background};
+
+  @media (max-width: ${colors.breakpoint}) {
+    text-align: start;
+    font-size: 24px;
+  }
 `
 function Banner({ quote, picture }) {
   return (

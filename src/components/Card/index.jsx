@@ -22,6 +22,10 @@ const CardImage = styled.img`
   width: 340px;
   border-radius: 10px;
   position: absolute;
+  @media (max-width: ${colors.breakpoint}) {
+    width: 100%;
+    height: 255px;
+  }
 `
 const CardGradient = styled.div`
   position: absolute;
@@ -33,6 +37,10 @@ const CardGradient = styled.div`
     rgba(0, 0, 0, 0.5) 100%
   );
   border-radius: 10px;
+  @media (max-width: ${colors.breakpoint}) {
+    width: 100%;
+    height: 255px;
+  }
 `
 
 const CardWrapper = styled.div`
@@ -45,17 +53,31 @@ const CardWrapper = styled.div`
   &:hover {
     cursor: pointer;
   }
-`
 
+  @media (max-width: ${colors.breakpoint}) {
+    width: 100%;
+    height: 255px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+`
+const LinkTo = styled(Link)`
+  @media (max-width: ${colors.breakpoint}) {
+    width: 90%;
+    height: 255px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+`
 function Card({ id, title, picture }) {
   return (
-    <Link to={`/fiche-logement/${id}`}>
+    <LinkTo to={`/fiche-logement/${id}`}>
       <CardWrapper>
         <CardImage src={picture} alt="logement" />
         <CardGradient />
         <CardTitle>{title}</CardTitle>
       </CardWrapper>
-    </Link>
+    </LinkTo>
   )
 }
 

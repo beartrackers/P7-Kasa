@@ -6,13 +6,19 @@ const GalleryWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-item: center;
+  align-items: center;
   border-radius: 25px;
   width: 90%;
   margin: auto;
   margin-top: 45px;
   margin-bottom: 45px;
   background-color: ${colors.backgroundGallery};
+
+  @media (max-width: ${colors.breakpoint}) {
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 100%;
+  }
 `
 function Gallery(props) {
   return (

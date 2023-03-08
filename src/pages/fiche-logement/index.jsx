@@ -23,12 +23,19 @@ const RightDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: ${colors.breakpoint}) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+  }
 `
 const Title = styled.p`
   color: ${colors.primary};
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
+  margin-bottom: 0;
 `
 const Location = styled.p`
   color: ${colors.primary};
@@ -42,6 +49,9 @@ const DescWrapper = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  @media (max-width: ${colors.breakpoint}) {
+    flex-direction: column;
+  }
 `
 
 const CollapseDiv = styled.div`
@@ -50,8 +60,9 @@ const CollapseDiv = styled.div`
   width: 90%;
   justify-content: space-between;
   margin: auto;
+  gap: 40px;
 
-  @media (max-width: 480px) {
+  @media (max-width: ${colors.breakpoint}) {
     flex-direction: column;
   }
 `

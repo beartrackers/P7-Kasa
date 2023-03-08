@@ -12,6 +12,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${colors.backgroundGallery};
+  @media (max-width: ${colors.breakpoint}) {
+    width: 90%;
+  }
 `
 
 const Header = styled.div`
@@ -24,6 +27,9 @@ const Header = styled.div`
 const Title = styled.h2`
   color: ${colors.background};
   margin-left: 20px;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 13px;
+  }
 `
 
 const Button = styled.button`
@@ -33,9 +39,12 @@ const Button = styled.button`
   color: ${colors.background};
   margin-right: 20px;
   cursor: pointer;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 12px;
+  }
 `
 
-const Content = styled.p`
+const Content = styled.div`
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 24px;
@@ -43,10 +52,16 @@ const Content = styled.p`
   margin-left: 20px;
   margin-right: 20px;
   color: ${colors.primary};
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 12px;
+  }
 `
 const List = styled.ul`
   list-style: none;
   padding: 0;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 12px;
+  }
 `
 
 const ListItem = styled.li`

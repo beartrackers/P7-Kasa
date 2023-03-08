@@ -10,7 +10,8 @@ const TextListContainer = styled.div`
 const TextListItem = styled.div`
   min-width: 115px;
   height: 25px;
-  margin: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   padding-left: 5px;
   padding-right: 5px;
   background-color: ${colors.primary};
@@ -20,6 +21,11 @@ const TextListItem = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  @media (max-width: ${colors.breakpoint}) {
+    min-width: 84px;
+    height: 18px;
+    font-size: 10px;
+  }
 `
 
 function TagList({ data }) {
