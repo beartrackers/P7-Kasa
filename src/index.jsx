@@ -24,7 +24,7 @@ ReactDOM.render(
         <Route path="/a-propos">
           <About />
         </Route>
-        <Route path="*">
+        <Route name="404">
           <Error />
         </Route>
       </Switch>

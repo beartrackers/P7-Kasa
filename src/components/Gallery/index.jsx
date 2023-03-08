@@ -15,11 +15,11 @@ const GalleryWrapper = styled.div`
   background-color: ${colors.backgroundGallery};
 `
 function Gallery(props) {
-  console.log(props)
   return (
     <GalleryWrapper>
       {props.cardTab.map((aCardTab) => (
         <Card
+          key={aCardTab.id}
           id={aCardTab.id}
           title={aCardTab.title}
           picture={aCardTab.cover}

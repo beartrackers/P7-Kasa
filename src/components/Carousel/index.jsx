@@ -26,7 +26,7 @@ const ButtonLeft = styled.button`
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 80px;
   cursor: pointer;
   left: 0;
 `
@@ -38,13 +38,12 @@ const ButtonRight = styled.button`
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 80px;
   cursor: pointer;
   right: 0;
 `
 const CarouselCounter = styled.div`
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 24px;
   color: #fff;
   position: absolute;
   bottom: 0;
@@ -86,11 +85,15 @@ const Carousel = ({ images }) => {
           <ButtonRight onClick={handleNext}>
             <FontAwesomeIcon icon={faChevronRight} />
           </ButtonRight>
+          <CarouselCounter>
+            {currentIndex + 1} / {images.length}
+          </CarouselCounter>
         </>
       )}
-      <CarouselCounter>
-        {currentIndex + 1} / {images.length}
-      </CarouselCounter>
+
+      {images.length === 1 && (
+        <CarouselImg src={images[currentIndex]} alt={`Image ${currentIndex}`} />
+      )}
     </CarouselDiv>
   )
 }
