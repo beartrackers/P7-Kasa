@@ -6,12 +6,12 @@ import colors from '../../utils/style/colors'
 
 const Wrapper = styled.div`
   width: 80%;
-  margin: auto;
+
   margin-top: 35px;
 
   display: flex;
   flex-direction: column;
-  background-color: ${colors.backgroundGallery};
+
   @media (max-width: ${colors.breakpoint}) {
     width: 90%;
   }
@@ -49,9 +49,11 @@ const Content = styled.div`
   padding-bottom: 15px;
   font-size: 24px;
   font-weight: 400;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: ${colors.primary};
+  border-radius: 5px;
+  background-color: ${colors.backgroundGallery};
   @media (max-width: ${colors.breakpoint}) {
     font-size: 12px;
   }
