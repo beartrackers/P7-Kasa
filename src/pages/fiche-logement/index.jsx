@@ -42,6 +42,7 @@ const Location = styled.p`
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
+  margin-top: 0;
 `
 const DescWrapper = styled.div`
   width: 90%;

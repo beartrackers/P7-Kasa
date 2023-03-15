@@ -59,6 +59,7 @@ const Content = styled.div`
 const List = styled.ul`
   list-style: none;
   padding: 0;
+  margin-top: 0;
   @media (max-width: ${colors.breakpoint}) {
     font-size: 12px;
   }
@@ -67,7 +68,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   margin-bottom: 10px;
 `
-function TextCollapse({ title, content }) {
+function TextCollapse({ title, content, isAlone = true }) {
   const [isCollapsed, setIsCollapsed] = useState(true)
 
   const toggleCollapse = () => {

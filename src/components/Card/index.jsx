@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-import DefaultPicture from '../../assets/carré.svg'
 import { Link } from 'react-router-dom'
 
 const CardTitle = styled.div`
@@ -44,7 +43,6 @@ const CardGradient = styled.div`
 `
 
 const CardWrapper = styled.div`
-  margin: 60px;
   background-color: ${colors.background};
   position: relative;
   border-radius: 10px;
@@ -57,11 +55,10 @@ const CardWrapper = styled.div`
   @media (max-width: ${colors.breakpoint}) {
     width: 100%;
     height: 255px;
-    margin: 0;
-    margin-bottom: 20px;
   }
 `
 const LinkTo = styled(Link)`
+  margin: 50px;
   @media (max-width: ${colors.breakpoint}) {
     width: 90%;
     height: 255px;
@@ -88,7 +85,6 @@ Card.propTypes = {
 
 Card.defaultProps = {
   title: 'Titre de la location',
-  picture: DefaultPicture,
 }
 
 export default Card

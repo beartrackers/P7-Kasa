@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-import ErrorIllustration from '../../assets/404.svg'
 import { StyledLink } from '../../utils/style/StyledLink'
 
 const ErrorWrapper = styled.div`
   height: calc(100vh - 350px);
-  margin: 30px;
+  gap: 50px;
   display: flex;
   flex-direction: column;
   background-color: ${colors.background};
@@ -14,20 +13,25 @@ const ErrorWrapper = styled.div`
 
 const ErrorSubtitle = styled.h2`
   color: ${colors.primary};
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 36px;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 18px;
+  }
 `
 
-const Illustration = styled.img`
-  max-width: 800px;
+const Number = styled.div`
+  color: ${colors.primary};
+  font-weight: 700;
+  font-size: 288px;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 98px;
+  }
 `
-// const ErrorReturn = styled.a`
-//   color: ${colors.primary};
-//   font-weight: 300;
-// `
 function Error() {
   return (
     <ErrorWrapper>
-      <Illustration src={ErrorIllustration} />
+      <Number>404</Number>
       <ErrorSubtitle>
         Oups! La page que vous demandez n'existe pas.
       </ErrorSubtitle>

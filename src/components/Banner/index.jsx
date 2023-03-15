@@ -19,7 +19,6 @@ const Illustration = styled.img`
 `
 
 const BannerQuote = styled.span`
-  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,7 +28,6 @@ const BannerQuote = styled.span`
   color: ${colors.background};
 
   @media (max-width: ${colors.breakpoint}) {
-    text-align: start;
     font-size: 24px;
   }
 `

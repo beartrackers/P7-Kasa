@@ -5,7 +5,8 @@ import styled from 'styled-components'
 const GalleryWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+
   align-items: center;
   border-radius: 25px;
   width: 90%;
@@ -17,6 +18,7 @@ const GalleryWrapper = styled.div`
   @media (max-width: ${colors.breakpoint}) {
     background-color: #ffffff;
     flex-direction: column;
+
     width: 100%;
   }
 `

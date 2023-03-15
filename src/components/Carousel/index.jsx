@@ -33,6 +33,9 @@ const ButtonLeft = styled.button`
   font-size: 80px;
   cursor: pointer;
   left: 0;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 24px;
+  }
 `
 
 const ButtonRight = styled.button`
@@ -45,6 +48,9 @@ const ButtonRight = styled.button`
   font-size: 80px;
   cursor: pointer;
   right: 0;
+  @media (max-width: ${colors.breakpoint}) {
+    font-size: 24px;
+  }
 `
 const CarouselCounter = styled.div`
   font-size: 24px;
@@ -53,6 +59,9 @@ const CarouselCounter = styled.div`
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  @media (max-width: ${colors.breakpoint}) {
+    display: none;
+  }
 `
 
 const CarouselImg = styled.img`
