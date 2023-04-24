@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/kasa/static/js/main.72da0078.chunk.js",
-    "main.js.map": "/kasa/static/js/main.72da0078.chunk.js.map",
-    "runtime-main.js": "/kasa/static/js/runtime-main.7d1e2baf.js",
-    "runtime-main.js.map": "/kasa/static/js/runtime-main.7d1e2baf.js.map",
-    "static/js/2.1f04d77e.chunk.js": "/kasa/static/js/2.1f04d77e.chunk.js",
-    "static/js/2.1f04d77e.chunk.js.map": "/kasa/static/js/2.1f04d77e.chunk.js.map",
-    "index.html": "/kasa/index.html",
-    "static/js/2.1f04d77e.chunk.js.LICENSE.txt": "/kasa/static/js/2.1f04d77e.chunk.js.LICENSE.txt",
-    "static/media/IMGBanner.19221376.png": "/kasa/static/media/IMGBanner.19221376.png",
-    "static/media/IMGBannerAPP.640955da.png": "/kasa/static/media/IMGBannerAPP.640955da.png"
+    "main.js": "/p7-kasa/static/js/main.72da0078.chunk.js",
+    "main.js.map": "/p7-kasa/static/js/main.72da0078.chunk.js.map",
+    "runtime-main.js": "/p7-kasa/static/js/runtime-main.b39b5bf8.js",
+    "runtime-main.js.map": "/p7-kasa/static/js/runtime-main.b39b5bf8.js.map",
+    "static/js/2.bf0bf8d1.chunk.js": "/p7-kasa/static/js/2.bf0bf8d1.chunk.js",
+    "static/js/2.bf0bf8d1.chunk.js.map": "/p7-kasa/static/js/2.bf0bf8d1.chunk.js.map",
+    "index.html": "/p7-kasa/index.html",
+    "static/js/2.bf0bf8d1.chunk.js.LICENSE.txt": "/p7-kasa/static/js/2.bf0bf8d1.chunk.js.LICENSE.txt",
+    "static/media/IMGBanner.19221376.png": "/p7-kasa/static/media/IMGBanner.19221376.png",
+    "static/media/IMGBannerAPP.640955da.png": "/p7-kasa/static/media/IMGBannerAPP.640955da.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d1e2baf.js",
-    "static/js/2.1f04d77e.chunk.js",
+    "static/js/runtime-main.b39b5bf8.js",
+    "static/js/2.bf0bf8d1.chunk.js",
     "static/js/main.72da0078.chunk.js"
   ]
 }
